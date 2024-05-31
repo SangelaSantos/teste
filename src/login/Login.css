@@ -1,24 +1,113 @@
+.geral {
+    font-family: Arial, sans-serif;
+}
 
-.Container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
+.topo {
     display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding: 20px;
-    background-color: blueviolet;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
 }
 
-input, button {
-    margin: 10px 0; 
-    padding: 10px;
+.logo p{
+    flex: 1;
+    color: #0B2A7A;
+    font-size: 18px;
+    font-weight: bold;
 }
-button {
+
+.topo-right {
+    display: flex;
+    align-items: center;
+}
+
+.topo-right p {
+    margin: 0 40px 0 0;
+}
+
+.topo-right button {
+    padding: 8px 25px;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: #ffff;
+    border: 1px solid #0059FD;
+    border-radius: 30px; 
+    cursor: pointer;
+    transition: .2s;
+    color: #0B2A7A;
+
+}
+
+.topo-right button:hover {
+    box-shadow: 0px 0px 8px #0059FD;
+    transform: scale(1.02);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-interno {
+    flex: 1;
+    max-width: 300px;
+    margin-right: 200px; 
+}
+.container-interno h2 {
+    margin-bottom: 20px;
+    color: #0B2A7A;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.inputs-field p {
+    margin: 10px 0 5px 0;
+    color: #0B2A7A;
+}
+
+.inputs-field input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1.5px solid #0059FD;
+    background-color: white;
     border-radius: 5px;
 }
-h2{
-    color: #ffff;
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    font-weight: 800;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+
+}
+.container button:hover {
+    box-shadow: 0px 0px 3px #0059FD;
+    transform: scale(1.01);
+}
+
+.login-img {
+    flex: 1;
+    max-width: 500px;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Empilha os itens verticalmente */
+    }
+
+    .container-interno, .login-img {
+      margin: 10px; /* Ajusta o margin para telas menores */
+      max-width: 100%; /* Permite que os itens ocupem a largura total */
+    }
 }

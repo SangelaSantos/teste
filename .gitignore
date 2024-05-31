@@ -21,3 +21,29 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignorar package.json
+package.json
+
+# Ignorar package-lock.json (se necessário)
+package-lock.json
+
+
+# Ignorar arquivos de ambiente
+.env
+.env.local
+
+# Ignorar logs
+logs/
+*.log
+
+# Ignorar arquivos de IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignorar outros arquivos e diretórios específicos
+.DS_Store
+*.bak
+*.tmp
